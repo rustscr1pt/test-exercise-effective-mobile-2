@@ -17,6 +17,6 @@ export class User {
     @Column()
     gender: 'male' | 'female';
 
-    @Column()
+    @Column({ default: false })  // Default value for hasProblems
     hasProblems: boolean;
 }
